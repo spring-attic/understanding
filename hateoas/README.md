@@ -2,17 +2,20 @@
 
 ## Overview
 
-HATEOAS stands for **Hypertext as the Engine of Application State**. It is a [constraint of the REST application achitecture](http://en.wikipedia.org/wiki/HATEOAS). There are many variations on how to pronounce this acronym, but many say "HATE-ee-os," similar to the word "hideous." A HATEOAS-based system is also referred to as a hypermedia-driven system.
+HATEOAS stands for **Hypertext as the Engine of Application State**. It is a [constraint of the REST application achitecture](http://en.wikipedia.org/wiki/HATEOAS).
 
-A hypermedia-driven site provides the information needed to navigate the site's REST interfaces dynamically. This is different from SOA-based systems and WSDL-driven interfaces where servers and clients must access a fixed specification in advance.
+A hypermedia-driven site provides the information needed to navigate the site's REST interfaces dynamically by including hypermedia links. This is different from SOA-based systems and WSDL-driven interfaces where servers and clients usually must access a fixed specification elsewhere.
+
+> **Note:** Many people ask how to pronounce this acronym. There are many variations including "hate-ee-os," similar to "hideous" as well as "hate O-A-S". As an alternative, people also refer to it as a hypermedia-driven system.
+
 
 ## Examples
 
-As an example, look at the following code that represents a simple `Person` object.
+As an example, look at the following code that represents a `Customer` object.
+
 ```java
-class PersonResource {
-	String firstname;
-	String lastname;
+class Customer {
+	String name;
 }
 ```
 
@@ -20,29 +23,63 @@ A simple JSON presentation is traditionally rendered as:
 
 ```json
 { 
-	"firstname" : "Dave",
-	"lastname" : "Matthews"
+	"name" : "Alice"
 }
 ```
 
-The data is there, but nothing about it's relevant links is provides.
+The customer data is there, but it contains nothing about it's relevant links.
 
 A HATEOAS-based response would look like:
 
 ```json
 {
-	"firstname" : "Dave",
-	"lastname" : "Matthews",
-	"links":[
-		{"rel":"self","href":"http://localhost:8080/people/1"},
-		{"rel":"delete","href":"http://localhost:8080/people/1"},
-		{"rel":"add","href":"http://localhost:8080/people/1"}
-	]
+	"name": "Alice",
+	"links": [ {
+		"rel": "self",
+		"href": "http://localhost:8080/customer/1"
+	} ]
 }
 ```
+This not only has the person's name, but includes the self-linking URL where that person is located.
 
-This not only has the person's name, i.e. the content of the resource, but includes the self-linking URL where that person is located. It also includes links for the other available operations: **delete** and **add**.
+- **rel** denotes a relationship. In this case, it's a reference to itself.
+- **href** is a complete URL that uniquely defines the resource.
 
-> **Note:** While these responses are shown in JSON, XML is also accepted as a standard response format. HATEOAS doesn't impose the requirement of either format. Instead, the hypermedia links provided along with the content is the focus of HATEOAS.
+> **Note:** While these responses are shown in JSON, XML is also accepted as a standard response format. HATEOAS doesn't impose the requirement of either format. Instead, the hypermedia links are the focus of HATEOAS.
 
-Even though this example shows **add** and **delete**, the purpose is to list hypermedia links to defined operations. A HATEOAS web service used to support shipping might have links to operations like **addItem**, **pay**, and **ship**.
+It's possible to build more complex relationships. The benefit of HATEOAS is that looking at the output, it's easy to gleen how to interact with the service without having to look up a specification or other external document.
+
+Look at the following catalog, courtesy of the sample application shown in the [Spring Data Book](https://github.com/SpringSource/spring-data-book):
+
+```json
+{
+	"content": [ {
+		"price": 499.00,
+		"description": "Apple tablet device",
+		"name": "iPad",
+		"links": [ {
+			"rel": "self",
+			"href": "http://localhost:8080/product/1"
+		} ],
+		"attributes": {
+			"connector": "socket"
+		}
+	}, {
+		"price": 49.00,
+		"description": "Dock for iPhone/iPad",
+		"name": "Dock",
+		"links": [ {
+			"rel": "self",
+			"href": "http://localhost:8080/product/3"
+		} ],
+		"attributes": {
+			"connector": "plug"
+		}
+	} ],
+	"links": [ {
+		"rel": "product.search",
+		"href": "http://localhost:8080/product/search"
+	} ]
+}	
+```
+Not only are the items and their prices shown, but the URL for each resource is shown, providing illumination to the interfaces of this site. Since HATEOAS is the final level of REST interfaces, each link is presumed to implement the standard GET/POST/PUT/DELETE verbs of REST (or a subset).
