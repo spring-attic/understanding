@@ -2,7 +2,7 @@
 
 ## Overview
 
-[AMQP][amqp], or **Asychronous Message Queueing Protocol**, is an openly published, wire specification for an asynchronous messaging system. This means that that every byte of transmitted data specified. This has allowed libraries to be written in many languages, on multiple operating systems, running on multiple CPU architectures, leading to a truly interoperable, cross platform messaging standard.
+[AMQP][amqp], or **Asychronous Message Queueing Protocol**, is an openly published, wire specification for asynchronous messaging. This means that every byte of transmitted data specified. This has allowed libraries to be written in many languages, on multiple operating systems, running on multiple CPU architectures, leading to a truly interoperable, cross platform messaging standard.
 
 In the Java community, the most common messaging system known is [JMS (Java Message Service)][jms]. JMS and AMQP are often compared in Java developer circles. A keen limitation of JMS is that the APIs are specified, but the format of the messages is not. There is no requirement on how the messages are actually formed and transmitted.
 
