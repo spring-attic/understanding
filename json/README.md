@@ -1,10 +1,10 @@
-# Understanding: JSON
+# Understanding JSON
 
 ## Overview
 
-JSON stands for JavaScript Object Notation. It is a lightweight syntax for exchanging data that is designed to be easily understood by humans, and easily parsed by machines. As the name implies, JSON is based on the JavaScript scripting language, however JSON itself is completely language independent.
+JSON (JavaScript Object Notation) is a lightweight syntax for exchanging data that is designed to be understood easily by humans, and parsed easily by machines. As the name implies, JSON is based on the JavaScript scripting language; however, JSON itself is completely language independent.
 
-JSON has become a popular notation for transmitting data via RESTful web services. There are numerous libraries for most programming languages that allow for easy parsing of JSON data, and many web frameworks now support producing JSON as response data. And because it has a smaller footprint than XML, it is ideal for use in conditions where network speeds are limited. For example, mobile devices often have slower connections and so benefit from a smaller download.
+JSON is a popular notation for transmitting data through RESTful web services. Numerous libraries for most programming languages allow easy parsing of JSON data, and many web frameworks now support producing JSON as response data. And because JSON has a smaller footprint than XML, it is ideal for conditions where network speeds are limited. For example, mobile devices often have slower connections and so benefit from a smaller download.
 
 The official internet media type for JSON is `application/json`, and JSON files typically have a `.json` extension.
 
@@ -13,8 +13,8 @@ The official internet media type for JSON is `application/json`, and JSON files 
 
 JSON is defined by two basic structures. 
 
- - name/value pairs
- - ordered list of values
+ - Name/value pairs
+ - Ordered list of values
 
 A value can be any one of the following types, and these structures can be nested:
 
@@ -23,7 +23,7 @@ A value can be any one of the following types, and these structures can be neste
  - Boolean (true or false)
  - Array
  - Object
- - null (empty)
+ - Null (empty)
 
 
 ## Examples
@@ -38,7 +38,7 @@ This object has three fields, where "name" is a string, "age" is a number, and "
 }
 ```
 
-Arrays contain a list of values, which can be of any type. This object has two arrays, "indexes" contains numbers and "names" contains strings.
+Arrays contain a list of values, which can be of any type. This object has two arrays; the "indexes" array contains numbers, and the "names" array contains strings.
 
 ```javascript
 {
