@@ -23,7 +23,7 @@ A value can be any one of the following types, and these structures can be neste
  - Boolean (true or false)
  - Array
  - Object
- - Null (empty)
+ - null (empty)
 
 
 ## Examples
