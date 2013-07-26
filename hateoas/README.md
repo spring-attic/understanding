@@ -4,7 +4,7 @@
 
 HATEOAS (Hypertext as the Engine of Application State) is a [constraint of the REST application achitecture](http://en.wikipedia.org/wiki/HATEOAS).
 
-A hypermedia-driven site provides information to navigate the site's REST interfaces dynamically by including hypermedia links. This capability differs from that of SOA-based systems and WSDL-driven interfaces where servers and clients usually must access a fixed specification elsewhere.
+A hypermedia-driven site provides information to navigate the site's REST interfaces dynamically by including hypermedia links with the responses. This capability differs from that of SOA-based systems and WSDL-driven interfaces where servers and clients usually must access a fixed specification that might be staged somewhere else on the website, on another website, perhaps distributed by email, or might not even have been released.
 
 > **Note:** Pronunciations of HATEOS vary. Some people pronounce it as "hate-ee-os," similar to "hideous," or  as "hate O-A-S". People also refer to it as a hypermedia-driven system.
 
@@ -42,7 +42,7 @@ A HATEOAS-based response would look like this:
 ```
 This response not only has the person's name, but includes the self-linking URL where that person is located.
 
-- **rel** denotes a relationship. In this case, it's a reference to itself.
+- **rel** means relationship. In this case, it's a self-referencing hyperlink. More complex systems might include other relationships. For example, an order might have a `"rel":"customer"` relationship, linking the order to its customer.
 - **href** is a complete URL that uniquely defines the resource.
 
 > **Note:** Although these responses are shown in JSON, XML is also accepted as a standard response format. HATEOAS doesn't impose the requirement of either format. The hypermedia links are the focus of HATEOAS.
@@ -82,4 +82,4 @@ Look at the following catalog, courtesy of the sample application shown in the [
 	} ]
 }	
 ```
-Not only are the items and their prices shown, but the URL for each resource is shown, providing illumination to the interfaces of this site. Because HATEOAS is the final level of REST interfaces, each link is presumed to implement the standard GET/POST/PUT/DELETE verbs of REST (or a subset).
+Not only are the items and their prices shown, but the URL for each resource is shown, providing clear information on how to access these resources. Because HATEOAS is the final level of REST (i.e. you can't get any more RESTful), each link is presumed to implement the standard GET/POST/PUT/DELETE verbs of REST (or a subset).
