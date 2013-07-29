@@ -4,7 +4,7 @@
 
 HATEOAS (Hypertext as the Engine of Application State) is a [constraint of the REST application achitecture](http://en.wikipedia.org/wiki/HATEOAS).
 
-A hypermedia-driven site provides information to navigate the site's REST interfaces dynamically by including hypermedia links with the responses. This capability differs from that of SOA-based systems and WSDL-driven interfaces where servers and clients usually must access a fixed specification that might be staged somewhere else on the website, on another website, perhaps distributed by email, or might not even have been released.
+A hypermedia-driven site provides information to navigate the site's REST interfaces dynamically by including hypermedia links with the responses. This capability differs from that of SOA-based systems and WSDL-driven interfaces. With SOA, servers and clients usually must access a fixed specification that might be staged somewhere else on the website, on another website, or perhaps distributed by email.
 
 > **Note:** Pronunciations of HATEOS vary. Some people pronounce it as "hate-ee-os," similar to "hideous," or  as "hate O-A-S". People also refer to it as a hypermedia-driven system.
 
@@ -82,4 +82,4 @@ Look at the following catalog, courtesy of the sample application shown in the [
 	} ]
 }	
 ```
-Not only are the items and their prices shown, but the URL for each resource is shown, providing clear information on how to access these resources. Because HATEOAS is the final level of REST (i.e. you can't get any more RESTful), each link is presumed to implement the standard GET/POST/PUT/DELETE verbs of REST (or a subset).
+Not only are the items and their prices shown, but the URL for each resource is shown, providing clear information on how to access these resources. According to the [Richardson Maturity Model](http://martinfowler.com/articles/richardsonMaturityModel.html), HATEOAS is considered the final level of REST. This means that each link is presumed to implement the standard REST verbs of GET, POST, PUT, and DELETE (or a subset). Thus providing the links as shown above gives the client the information they need to navigate the service.
