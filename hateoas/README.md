@@ -15,7 +15,7 @@ The following code represents a `Customer` object.
 
 ```java
 class Customer {
-	String name;
+    String name;
 }
 ```
 
@@ -23,7 +23,7 @@ A simple JSON presentation is traditionally rendered as:
 
 ```json
 { 
-	"name" : "Alice"
+    "name" : "Alice"
 }
 ```
 
@@ -33,11 +33,11 @@ A HATEOAS-based response would look like this:
 
 ```json
 {
-	"name": "Alice",
-	"links": [ {
-		"rel": "self",
-		"href": "http://localhost:8080/customer/1"
-	} ]
+    "name": "Alice",
+    "links": [ {
+        "rel": "self",
+        "href": "http://localhost:8080/customer/1"
+    } ]
 }
 ```
 This response not only has the person's name, but includes the self-linking URL where that person is located.
@@ -53,33 +53,33 @@ Look at the following catalog, courtesy of the sample application shown in the [
 
 ```json
 {
-	"content": [ {
-		"price": 499.00,
-		"description": "Apple tablet device",
-		"name": "iPad",
-		"links": [ {
-			"rel": "self",
-			"href": "http://localhost:8080/product/1"
-		} ],
-		"attributes": {
-			"connector": "socket"
-		}
-	}, {
-		"price": 49.00,
-		"description": "Dock for iPhone/iPad",
-		"name": "Dock",
-		"links": [ {
-			"rel": "self",
-			"href": "http://localhost:8080/product/3"
-		} ],
-		"attributes": {
-			"connector": "plug"
-		}
-	} ],
-	"links": [ {
-		"rel": "product.search",
-		"href": "http://localhost:8080/product/search"
-	} ]
-}	
+    "content": [ {
+        "price": 499.00,
+        "description": "Apple tablet device",
+        "name": "iPad",
+        "links": [ {
+            "rel": "self",
+            "href": "http://localhost:8080/product/1"
+        } ],
+        "attributes": {
+            "connector": "socket"
+        }
+    }, {
+        "price": 49.00,
+        "description": "Dock for iPhone/iPad",
+        "name": "Dock",
+        "links": [ {
+            "rel": "self",
+            "href": "http://localhost:8080/product/3"
+        } ],
+        "attributes": {
+            "connector": "plug"
+        }
+    } ],
+    "links": [ {
+        "rel": "product.search",
+        "href": "http://localhost:8080/product/search"
+    } ]
+}   
 ```
 Not only are the items and their prices shown, but the URL for each resource is shown, providing clear information on how to access these resources. According to the [Richardson Maturity Model](http://martinfowler.com/articles/richardsonMaturityModel.html), HATEOAS is considered the final level of REST. This means that each link is presumed to implement the standard REST verbs of GET, POST, PUT, and DELETE (or a subset). Thus providing the links as shown above gives the client the information they need to navigate the service.
