@@ -5,6 +5,6 @@
  - [HATEOAS](./hateoas)
  - [JSON](./json)
  - [NoSQL](./nosql)
+ - [OAuth](./oauth)
  - [REST](./rest)
- - [war](./war)
- 
+ - [war](./war) 
