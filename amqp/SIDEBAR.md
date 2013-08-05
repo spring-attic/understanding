@@ -1,4 +1,4 @@
-### Getting Started Guides
+### Getting Started guides
 
 * [Messaging with RabbitMQ][gs-messaging-rabbitmq]
 * [Messaging with JMS][gs-messaging-jms]
