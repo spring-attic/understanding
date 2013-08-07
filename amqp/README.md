@@ -22,7 +22,7 @@ These advantages and the openness of the spec have inspired the creation of mult
 - JMS has queues and topics. A message sent on a JMS queue is consumed by no more than one client. A message sent on a JMS topic may be consumed by multiple consumers. AMQP only has queues. A message sent on an AMQP queue may reach one or more consumers.
 - JMS and AMQP have an equivalent message header, providing the means to sort and route messages.
 - JMS and AMQP both have brokers responsible for receiving, routing, and ultimately dispensing messages to consumers.
-- AMQP has exchanges and routes. Messages are published to exchanges. Routes define on which queue(s) to publish the message.
+- AMQP has exchange, routes, and queues. Messages are first published to exchanges. Routes define on which queue(s) to pipe the message. Consumers subscribing to that queue then receive a copy of the message.
 
 [amqp]: http://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol
 [jms]: http://en.wikipedia.org/wiki/Java_Message_Service
