@@ -7,3 +7,9 @@
 
 [gs-actuator-service]: /guides/gs/actuator-service/content
 [gs-rest-hateoas]: /guides/gs/rest-hateoas/content
+
+### Understanding
+
+* [REST][u-rest]
+
+[u-rest]: /understanding/rest
