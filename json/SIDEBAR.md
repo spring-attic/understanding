@@ -8,4 +8,4 @@
 
 [gs-messaging-reactor]: /guides/gs/messaging-reactor/content
 [gs-rest-hateoas]: /guides/gs/rest-hateoas/content
-[gs-rest-service]: /guides/gs/rest-servie/content
+[gs-rest-service]: /guides/gs/rest-service/content
