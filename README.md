@@ -1,10 +1,11 @@
 # Concepts and Technologies
 
  - [AMQP](./amqp)
- - [hadoop](./hadoop)
+ - [Hadoop](./hadoop)
  - [HATEOAS](./hateoas)
  - [JSON](./json)
  - [NoSQL](./nosql)
  - [OAuth](./oauth)
  - [REST](./rest)
- - [war](./war) 
+ - [View Templates](./view-templates)
+ - [WAR](./war) 
