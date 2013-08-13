@@ -28,16 +28,16 @@ Note the [JSTL](http://en.wikipedia.org/wiki/JavaServer_Pages_Standard_Tag_Libra
 ```html
 <c:url var="hotelsUrl" value="/hotels"/>
 <form:form modelAttribute="searchCriteria" action="${hotelsUrl}" method="get" cssClass="inline">
-	<span class="errors span-18">
-		<form:errors path="*"/>
-	</span>
-	<fieldset>
-		<div class="span-8">
-			<label for="searchString">SeaString:</label>
-			<form:input id="searchString" path="searchString"/>
-		</div>
-		...
-	</fieldset>
+    <span class="errors span-18">
+        <form:errors path="*"/>
+    </span>
+    <fieldset>
+        <div class="span-8">
+            <label for="searchString">SeaString:</label>
+            <form:input id="searchString" path="searchString"/>
+        </div>
+        ...
+    </fieldset>
 </form:form>
 ```
 
