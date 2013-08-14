@@ -1,7 +1,5 @@
 # Understanding NoSQL
 
-## Overview
-
 _NoSQL_ refers to a database that is not based on SQL (Structured Query Language), which is the language most commonly associated with **relational** databases. Essentially, NoSQL data isn't relational, NoSQL databases usually do not have schema, and they come with looser consistency models than traditional relational databases do.
 
 The term "NoSQL" refers to the fact that traditional relational databases are not adequate for all solutions, particularly ones involving large volumes of data. But the term has been extended to also mean "Not only SQL", indicating support for potential SQL-based interfaces even if the core database isn't relational. Software developers that use NoSQL solutions don't necessarily advocate dismissing relational databases, but instead see value in using the right data store for the job.

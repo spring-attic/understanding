@@ -1,7 +1,5 @@
 # Understanding REST
 
-## Overview
-
 REST (Representational State Transfer) was introduced and defined in 2000 by Roy Fielding in his [doctoral dissertation](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm). REST is an architectural style for designing distributed systems. It is not a standard but a set of constraints, such as being stateless, having a client/server relationship, and a uniform interface. REST is not strictly related to HTTP, but it is most commonly associated with it.
 
 ## Principles of REST

@@ -1,7 +1,5 @@
 # Understanding git
 
-## Overview
-
 [Git][git] is a free and open source distributed version control system (DVCS) designed to handle everything from small to very large projects with speed and efficiency.
 
 Git was created by [Linux](http://www.linux.org/) creator, [Linus Torvalds](http://en.wikipedia.org/wiki/Linus_Torvalds) to provide a better means to support such a huge, disparate group of developers. But Git's rise in popularity is more closely tied to http://github.com. Git has been in existence in years, but the rise of GitHub has resulted in a relatively recent rise in usage of git. GitHub allows people to host open projects for free while providing simple hooks and a friendly user experience, making usage of git easier.

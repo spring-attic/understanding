@@ -1,7 +1,5 @@
 # Understanding AMQP
 
-## Overview
-
 [AMQP][amqp] (Asychronous Message Queueing Protocol) is an openly published wire specification for asynchronous messaging. Every byte of transmitted data is specified. This characteristic allows libraries to be written in many languages, and to run on multiple operating systems and CPU architectures, which makes for a truly interoperable, cross-platform messaging standard.
 
 ## Advantages of AMQP over JMS

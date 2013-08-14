@@ -1,7 +1,5 @@
 # Understanding Application Context
 
-## Overview
-
 The [`ApplicationContext`] is the central interface within a Spring application for providing configuration information to the application. It is read-only at run time, but can be reloaded if necessary and supported by the application. There are a number of classes which implement the `ApplicationContext` interface, allowing for a variety of configuration options and types of applications.
 
 The `ApplicationContext` provides:

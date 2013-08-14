@@ -1,7 +1,5 @@
 # Understanding WAR
 
-## Overview
-
 [WAR (Web application ARchive) files][war] are used to distribute Java-based web applications. They have the same file structure as JAR files, which is a single compressed file, containing multiple files bundled inside it.
 
 WAR files are used to combine [JSPs][u-jsp], servlets, Java class files, XML files, javascript libraries, JAR libraries, static web pages, and any other resources needed to run the application.

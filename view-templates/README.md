@@ -1,7 +1,5 @@
 # Understanding View Templates
 
-## Overview
-
 The Model-View-Controller (MVC) software design pattern is a method for separating concerns within a software application. In principal, the application logic, or controller, is separated from the technology used to display information to the user, or the view layer. The model is used as a communications vehicle between the controller and view layers.
 
 Within an application, the view layer may use one or more of several different technologies to render the view. Spring web-based applications support the use of a variety of view options, often referred to as view templates. These technologies are described as "templates" because they provide a markup language to expose model attributes within the view during server-side rendering.

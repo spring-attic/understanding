@@ -1,7 +1,5 @@
 # Understanding JSON
 
-## Overview
-
 JSON (JavaScript Object Notation) is a lightweight syntax for exchanging data that is designed to be understood easily by humans, and parsed easily by machines. As the name implies, JSON is based on the JavaScript scripting language; however, JSON itself is completely language independent.
 
 JSON is a popular notation for transmitting data through RESTful web services. Numerous libraries for most programming languages allow easy parsing of JSON data, and many web frameworks now support producing JSON as response data. And because JSON has a smaller footprint than XML, it is ideal for conditions where network speeds are limited. For example, mobile devices often have slower connections and so benefit from a smaller download.

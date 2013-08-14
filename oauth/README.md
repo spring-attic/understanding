@@ -1,7 +1,5 @@
 # Understanding OAuth
 
-## Overview
-
 OAuth stands for Open Authorization. As stated on [ouath.net](http://oauth.net), OAuth is "An open protocol to allow secure authorization in a simple and standard method from web, mobile and desktop applications". In other words, it is an authorization protocol that allows users to approve a third-party application to act on their behalf without revealing their login credentials to that third-party. In contrast, OAuth is not an authentication protocol for signing in with a username and password. Authentication is handled independently from the OAuth process. Currently, there are two major versions of OAuth being used, 1.0(a) and 2.0.
 
 
