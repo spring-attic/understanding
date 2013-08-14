@@ -1,4 +1,4 @@
-# Understanding: View Templates
+# Understanding View Templates
 
 ## Overview
 
