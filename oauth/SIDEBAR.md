@@ -1,6 +1,6 @@
-## Related Resources
+## Related resources
 
-### Getting Started Guides
+### Getting Started guides
 
 * [Accessing Facebook Data][gs-accessing-facebook]
 * [Accessing Twitter Data][gs-accessing-twitter]
