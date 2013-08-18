@@ -1,6 +1,6 @@
-## Related Resources
+## Related resources
 
-### Getting Started Guides
+### Getting Started guides
 
 * [Handling Form Submission][gs-handling-form-submission]
 * [Building a RESTful Web Service][gs-rest-service]

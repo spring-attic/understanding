@@ -1,12 +1,12 @@
 # Understanding View Templates
 
-The Model-View-Controller (MVC) software design pattern is a method for separating concerns within a software application. In principal, the application logic, or controller, is separated from the technology used to display information to the user, or the view layer. The model is used as a communications vehicle between the controller and view layers.
+The Model-View-Controller (MVC) software design pattern is a method for separating concerns within a software application. In principal, the application logic, or controller, is separated from the technology used to display information to the user, or the view layer. The model is a communications vehicle between the controller and view layers.
 
-Within an application, the view layer may use one or more of several different technologies to render the view. Spring web-based applications support the use of a variety of view options, often referred to as view templates. These technologies are described as "templates" because they provide a markup language to expose model attributes within the view during server-side rendering.
+Within an application, the view layer may use one or more different technologies to render the view. Spring web-based applications support a variety of view options, often referred to as view templates. These technologies are described as "templates" because they provide a markup language to expose model attributes within the view during server-side rendering.
 
-## View Template Libraries
+## View template libraries
 
-The following are some examples of view template libraries that are compatible with Spring:
+The following view template libraries, among others, are compatible with Spring:
 
  - [JSP/JSTL](http://www.oracle.com/technetwork/java/javaee/jsp/index.html)
  - [Thymeleaf](http://www.thymeleaf.org/)
@@ -15,13 +15,13 @@ The following are some examples of view template libraries that are compatible w
  - [Velocity](http://velocity.apache.org/tools/devel/view/)
 
 
-## Comparison
+## Comparing JSP and Thymeleaf
 
-The following examples illustrate how to render the same content with JSP and Thymeleaf templates. More detail can be seen in this [Spring blog post](http://blog.springsource.org/2013/03/26/bringing-new-life-to-spring-travel-with-thymeleaf/).
+The following examples illustrate how to render the same content with JSP and Thymeleaf templates. For more detail, see this [Spring blog post](http://blog.springsource.org/2013/03/26/bringing-new-life-to-spring-travel-with-thymeleaf/).
 
 ### JSP
 
-Note the [JSTL](http://en.wikipedia.org/wiki/JavaServer_Pages_Standard_Tag_Library) expressions used in this example. JSTL stands for JavaServer Pages Standard Tag Library.
+Note the [JSTL](http://en.wikipedia.org/wiki/JavaServer_Pages_Standard_Tag_Library) (JavaServer Pages Standard Tag Library) expressions in this example.
 
 ```html
 <c:url var="hotelsUrl" value="/hotels"/>

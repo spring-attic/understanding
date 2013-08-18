@@ -1,15 +1,15 @@
-## Related Resources
+## Related resources
 
-### Getting Started Guides
+### Getting Started guides
 
 * [Accessing Facebook Data][gs-accessing-facebook]
 * [Accessing Twitter Data][gs-accessing-twitter]
 * [Consuming a RESTful Web Service][gs-consuming-rest]
-* [Converting a Spring Boot JAR-based application into a WAR][gs-convert-jar-to-war]
+* [Converting a Spring Boot JAR-based application to a WAR][gs-convert-jar-to-war]
 * [Detecting a Device][gs-device-detection]
 * [Handling Form Submission][gs-handling-form-submission]
 * [Integrating Data][gs-integration]
-* [Building a Hypermedia Driven REST Web Service][gs-rest-hateoas]
+* [Building a Hypermedia-Driven RESTful Web Service][gs-rest-hateoas]
 * [Building a RESTful Web Service][gs-rest-service]
 * [Securing a Web Application][gs-securing-web]
 * [Uploading a File][gs-uploading-files]

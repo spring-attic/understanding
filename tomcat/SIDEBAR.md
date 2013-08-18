@@ -1,10 +1,10 @@
-## Related Resources
+## Related resources
 
-### Getting Started Guides
+### Getting Started guides
 
 * [Building a RESTful Web Service][gs-rest-service]
-* [Building a Hypermedia Driven REST Web Service][gs-rest-hateoas]
-* [Building an application with Spring Boot][gs-spring-boot]
+* [Building a Hypermedia-Driven RESTful Web Service][gs-rest-hateoas]
+* [Building an Application with Spring Boot][gs-spring-boot]
 
 [gs-rest-service]: /guides/gs/rest-service/
 [gs-rest-hateoas]: /guides/gs/rest-hateoas/
