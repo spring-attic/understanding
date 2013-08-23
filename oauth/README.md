@@ -1,6 +1,6 @@
 # Understanding OAuth
 
-OAuth (Open Authorization), as stated on [ouath.net](http://oauth.net), is "an open protocol to allow secure authorization in a simple and standard method from web, mobile and desktop applications." In other words, OAuth is an authorization protocol that allows users to approve a third-party application to act on their behalf without revealing their login credentials to that third party. 
+OAuth (Open Authorization), as stated on [oauth.net](http://oauth.net), is "an open protocol to allow secure authorization in a simple and standard method from web, mobile and desktop applications." In other words, OAuth is an authorization protocol that allows users to approve a third-party application to act on their behalf without revealing their login credentials to that third party. 
 
 In contrast, OAuth is not an authentication protocol for signing in with a username and password. Authentication is handled independently from the OAuth process. 
 
