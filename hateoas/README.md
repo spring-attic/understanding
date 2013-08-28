@@ -4,7 +4,7 @@ HATEOAS (Hypertext as the Engine of Application State) is a [constraint of the R
 
 A hypermedia-driven site provides information to navigate the site's [REST][u-rest] interfaces dynamically by including hypermedia links with the responses. This capability differs from that of SOA-based systems and WSDL-driven interfaces. With SOA, servers and clients usually must access a fixed specification that might be staged somewhere else on the website, on another website, or perhaps distributed by email.
 
-> **Note:** Pronunciations of HATEOS vary. Some people pronounce it as "hate-ee-os," similar to "hideous," or  as "hate O-A-S". People also refer to it as a hypermedia-driven system.
+> **Note:** Pronunciations of HATEOAS vary. Some people pronounce it as "hate-ee-os," similar to "hideous," or  as "hate O-A-S". People also refer to it as a hypermedia-driven system.
 
 
 ## Examples
