@@ -16,6 +16,11 @@ There's more to NoSQL than what is presented here. You may want to continue your
 [gs-accessing-data-neo4j]: /guides/gs/accessing-data-neo4j/
 [gs-accessing-data-mongo]: /guides/gs/accessing-data-mongo/
 
+### Tutorials
+
+* [Persisting Data with Spring][tut-data]
+
+[tut-data]: /guides/tutorials/data/
 
 ### Spring Data and NoSQL support
 
