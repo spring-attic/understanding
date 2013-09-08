@@ -19,7 +19,7 @@
 ### Tutorials
 
 * [Designing and Implementing RESTful Web Services with Spring][tut-rest]
-* [Designing and Implementing a Web Site with Spring][tut-web]
+* [Designing and Implementing a Web Application with Spring][tut-web]
 
 [tut-rest]: /tut/rest/
 [tut-web]: /guides/tutorials/web
