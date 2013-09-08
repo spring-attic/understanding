@@ -18,7 +18,7 @@ There's more to NoSQL than what is presented here. You may want to continue your
 
 ### Tutorials
 
-* [Persisting Data with Spring][tut-data]
+* [Data Access with Spring][tut-data]
 
 [tut-data]: /guides/tutorials/data/
 
