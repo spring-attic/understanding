@@ -4,7 +4,7 @@
 
 ## Advantages of AMQP over JMS
 
-AMQP is often compared to [JMS (Java Message Service)][jms], the most common messaging system in the Java community. A limitation of JMS is that the APIs are specified, but the message format is not. Unlike AMQP, JMS has no requirement for how messages are formed and transmitted.
+AMQP is often compared to [JMS (Java Message Service)][jms], the most common messaging system in the Java community. A limitation of JMS is that the APIs are specified, but the message format is not. Unlike AMQP, JMS has no requirement for how messages are formed and transmitted. Essentially, every JMS broker can implement the messages in a different format. They just have to use the same API.
 
 Thus [Pivotal][pivotal] has released a JMS on Rabbit project, a library that implements the JMS APIs but uses [RabbitMQ][rabbitmq], an AMQP broker, to transmit the messages.
 
@@ -17,10 +17,10 @@ These advantages and the openness of the spec have inspired the creation of mult
 
 ## AMQP and JMS terminology
 
-- JMS has queues and topics. A message sent on a JMS queue is consumed by no more than one client. A message sent on a JMS topic may be consumed by multiple consumers. AMQP only has queues. A message sent on an AMQP queue may reach one or more consumers.
+- JMS has queues and topics. A message sent on a JMS queue is consumed by no more than one client. A message sent on a JMS topic may be consumed by multiple consumers. AMQP only has queues. While AMQP queues are only consumed by a single receiver, AMQP producers don't publish directly to queues. A message is published to an exchange, which through its bindings may get sent to one queue or multiple queues, effectively emulating JMS queues and topics.
 - JMS and AMQP have an equivalent message header, providing the means to sort and route messages.
 - JMS and AMQP both have brokers responsible for receiving, routing, and ultimately dispensing messages to consumers.
-- AMQP has exchange, routes, and queues. Messages are first published to exchanges. Routes define on which queue(s) to pipe the message. Consumers subscribing to that queue then receive a copy of the message.
+- AMQP has exchanges, routes, and queues. Messages are first published to exchanges. Routes define on which queue(s) to pipe the message. Consumers subscribing to that queue then receive a copy of the message. If more than one consumer subscribes to the same queue, the messages are dispensed in a round-robin fashion.
 
 [amqp]: http://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol
 [jms]: http://en.wikipedia.org/wiki/Java_Message_Service
