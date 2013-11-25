@@ -51,7 +51,7 @@ Optionally, `Access-Control-Allow-Origin` may be set to "*" to indicate that all
 If a request may have implications on user data, a simple request is insufficient. Instead, a preflight CORS request is sent in advance of the actual request to ensure that the actual request is safe to send.
 Preflight requests are appropriate when the actual request is any HTTP Method other than GET, POST, or HEAD or if a POST request's content type is anything other than `application/x-www-form-urlencoded`, `multipart/form-data`, or `text/plain`. Also, if the request contains any custom headers, then a preflight request is required.
 
-> **Note:** Some Javascript libraries, such as AngularJS and Sencha Touch, send preflight requests for any kind of request.
+> **Note:** Some Javascript libraries, such as AngularJS and Sencha Touch, send preflight requests for any kind of request. This approach is arguably safer, because it doesn't assume that a service adheres to HTTP method semantics (i.e., a GET endpoint **could** have been written to have side effects.)
 
 For example, suppose that a client served from foo.client.com performs a DELETE request against a resource at bar.server.com. The preflight request takes the form of an OPTIONS request with the following headers:
 
