@@ -11,10 +11,11 @@ In the simplest scenario, cross-origin communications starts with a client makin
 The request includes an `Origin` header that indicates the origin of the client code.
 
 The server will consider the request's `Origin` and either allow or disallow the request.
-If the request is disallowed, TODO.
-
-However, if the server allows the request, then it will respond with the requested resource and an `Access-Control-Allow-Origin` header in the response.
+If the server allows the request, then it will respond with the requested resource and an `Access-Control-Allow-Origin` header in the response.
 This header will indicate to the client which client origins will be allowed to access the resource.
+Assuming that the  `Access-Control-Allow-Origin` header matches the request's `Origin`, the browser will allow the request.
+
+On the other hand, if `Access-Control-Allow-Origin` is missing in the response or if it doesn't match the request's `Origin`, the browser will disallow the request.
 
 For example, suppose that client code served from foo.client.com were to send the following request for a resource at bar.server.com:
 
