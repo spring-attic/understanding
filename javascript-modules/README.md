@@ -1,17 +1,23 @@
 # Understanding JavaScript Modules
 
-JavaScript modules are the foundation of modular programming patterns in
-JavaScript. The closest analog in the Java language are Java Classes.
-However, JavaScript modules can be of any type.  The most common types
-are object literals, functions, and constructors.
+In JavaScript, the word "modules" refers to small units of
+independent, reusable code.  They are the foundation of many JavaScript
+design patterns and are critically necessary when building any non-trivial
+JavaScript-based application.
 
-ECMAScript, the JavaScript standards body, expects to finally ratify
-a specification for modules in ECMAScript version 6 by the end of 2014.
-*ES6 modules*, however, will likely not be feasible to use in production
-until 2016 due to the long upgrade cycles of some browsers and
-operating systems.
+The closest analog in the Java language are Java Classes. However, JavaScript
+modules *export* a value, rather than *define* a type. In practice, most
+JavaScript modules export an object literal, a functions, or a constructor.
+Modules that export a string containing an HTML template or a CSS stylesheet
+are also common.
 
-In the mean time, two *de facto* module patterns have evolved.
+ECMAScript, the JavaScript standards body, expects to ratify a final
+specification for modules in ECMAScript version 6 by the end of 2014.
+ECMAScript 6 modules ("ES6 modules"), however, will likely not be feasible
+to use in production until 2016 due to the long upgrade cycles of some
+browsers and operating systems.
+
+In the mean time, two *de facto* module formats have evolved.
 Asynchronous Module Definition (AMD) is the most popular for client-side
 code, while node.js modules (an extension to CommonJS Modules/1.1)
 is the leading pattern in server-side environments.  Universal Module
@@ -40,7 +46,6 @@ The factory function may export any JavaScript type, but typically
 developers export objects, functions, and constructors.
 Modules that export functions or constructors are called
 "function-modules" and "constructor-modules", respectively.
-Exporting HTML templates or CSS stylesheets as strings is also common.
 
 An AMD module may specify dependencies on other modules by listing the
 dependent modules in the array of ids.  Before the factory executes,
@@ -116,8 +121,3 @@ import when from 'when';
 > **Note:** `import` and `export` must be used at the top block scope.
 > Nesting `import` or `export` inside blocks will cause the run-time
 > environment to throw a SyntaxError.
-
-## Why use JavaScript modules?
-
-Imagine if Java had no import statement and all class names were in
-the default package.
