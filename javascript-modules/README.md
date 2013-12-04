@@ -36,11 +36,11 @@ define(['store/customer', 'when'], function (customerStore, when) {
 });
 ```
 
-An AMD environment provides a single global function, `define`.  The
-`define` function has several signatures, including some that
-trigger special behavior, but the simplest form accepts an array
-of module ids and a factory function.  An AMD module should export
-something by returning a value from the factory function.
+An [AMD](https://github.com/amdjs/amdjs-api/wiki) environment provides a
+single global function, `define`.  The `define` function has several
+signatures, including some that trigger special behavior, but the simplest
+form accepts an array of module ids and a factory function.  An AMD module
+should export something by returning a value from the factory function.
 
 The factory function may export any JavaScript type, but typically
 developers export objects, functions, and constructors.
@@ -67,7 +67,8 @@ module.exports = function (id) {
 };
 ```
 
-The node.js environment roughly follows the CommonJS Modules/1.1 proposal,
+The node.js environment roughly follows the
+[CommonJS Modules/1.1 proposal](http://wiki.commonjs.org/wiki/Modules/1.1.1),
 which specifies that the environment should inject three locally-scoped
 variables: `exports`, `require`, and `module`.
 
@@ -121,3 +122,11 @@ import when from 'when';
 > **Note:** `import` and `export` must be used at the top block scope.
 > Nesting `import` or `export` inside blocks will cause the run-time
 > environment to throw a SyntaxError.
+
+
+## JavaScript Packages
+
+One or more related modules may be organized into a JavaScript package.
+Similar to Java packages, JavaScript packages organize their modules
+into a hierarchy under a single namespace.  Unlike Java packages,
+JavaScript packages do not enforce access privileges.
