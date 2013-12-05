@@ -5,6 +5,7 @@
  - [git](./git)
  - [Hadoop](./hadoop)
  - [HATEOAS](./hateoas)
+ - [JavaScript Promises](./javascript-promises)
  - [JSON](./json)
  - [NoSQL](./nosql)
  - [OAuth](./oauth)
