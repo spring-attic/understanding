@@ -33,7 +33,7 @@ directory of your project.  The package manager will ask several questions.
 Your answers will be used to create a `bower.json` or `package.json`
 config file.
 
-To search for packages, type `bower find <keywords>` or `npm find <keywords>`.
+To search for packages, type `bower search <keywords>` or `npm search <keywords>`.
 A list of matching packages will be displayed.
 
 To install a package and save its information to the config file, type
