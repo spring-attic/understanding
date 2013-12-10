@@ -7,7 +7,7 @@ JavaScript-based application.
 
 The closest analog in the Java language are Java Classes. However, JavaScript
 modules *export* a value, rather than *define* a type. In practice, most
-JavaScript modules export an object literal, a functions, or a constructor.
+JavaScript modules export an object literal, a function, or a constructor.
 Modules that export a string containing an HTML template or a CSS stylesheet
 are also common.
 
