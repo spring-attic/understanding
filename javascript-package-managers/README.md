@@ -13,7 +13,7 @@ npm tends to be used primarily for node.js development, and bower tends to be
 the favorite for client-side work.
 
 While npm and bower use incompatible organizational patterns, both may
-be used in a single project since they use different configuration files
+be used in a single project since they use different metadata files
 (`package.json` and `bower.json`), and they install packages into
 different subdirectories.  It's not uncommon to use npm to manage
 server-side packages and bower to manage client-side packages.
@@ -31,13 +31,23 @@ examples are for bower and npm, but similar concepts exist for the others.
 After installing bower or npm, type `bower init` or `npm init` at the root
 directory of your project.  The package manager will ask several questions.
 Your answers will be used to create a `bower.json` or `package.json`
-config file.
+metadata file for your project.
 
-To search for packages, type `bower search <keywords>` or `npm search <keywords>`.
-A list of matching packages will be displayed.
+To search for available packages to install, type `bower search <keywords>`
+or `npm search <keywords>`.  A list of matching packages will be displayed.
 
-To install a package and save its information to the config file, type
-`bower install --save <package-name>` or `npm install --save <package-name>`.
-The `--save` option is not required.  However, the package manager, as well
-as other third-party tools, can use the extra configuration data to automate
-or simplify certain tasks.
+To install a package into the local module cache and then copy its latest
+version into your project, type `bower install <package-name>` or
+`npm install <package-name>`.  To install a specific version, the syntax
+varies slightly amongst package managers: `bower install <package-name>#<package-version>`
+or `npm install <package-name>@<package-version>`.
+
+You may also save each package's version info into your project's metadata file.
+The package manager -- as well as other third-party tools -- can use the
+metadata to simplify client-side maintenance, build, testing, and
+bootstrapping tasks.
+
+The best way to save a package's version info into your project's metadata
+file, is to use the `--save` option while installing the package.  Type
+`bower install --save <package-name>#<package-version>`
+or `npm install --save <package-name>@<package-version>`.
