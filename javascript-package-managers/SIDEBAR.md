@@ -12,4 +12,4 @@
 * [JavaScript Promises][u-javascript-promises]
 
 [u-javascript-promises]: /understanding/javascript-promises
-[u-javascript-package-managers]: /understanding/javascript-package-managers
+[u-javascript-modules]: /understanding/javascript-modules
