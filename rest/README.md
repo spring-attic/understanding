@@ -45,6 +45,16 @@ Modify the address with an ID of 1:
 PUT /addresses/1
 ```
 
+> **Note:** PUT replaces an existing entity. If only a subset of data elements are provided, the rest will be replaced with empty or null.
+
+### PATCH
+
+Update only the specified fields of an entity at a URI. A PATCH request is idempotent. Idempotency is the main difference between the expectations of PUT versus a POST request.
+
+```
+PATCH /addresses/1
+```
+
 ### DELETE
 
 Request that a resource be removed; however, the resource does not have to be removed immediately. It could be an asynchronous or long-running request.
