@@ -4,17 +4,13 @@ There's more to NoSQL than what is presented here. You may want to continue your
 
 ### Getting Started Guides
 
-* [Accessing Relational Data][gs-relational-data-access]
-* [Accessing Data with JPA][gs-accessing-data-jpa]
-* [Accessing Data with GemFire][gs-accessing-data-gemfire]
-* [Accessing Data with Neo4j][gs-accessing-data-neo4j]
-* [Accessing Data with MongoDB][gs-accessing-data-mongo]
-
-[gs-relational-data-access]: /guides/gs/relational-data-access/
-[gs-accessing-data-jpa]: /guides/gs/accessing-data-jpa/
-[gs-accessing-data-gemfire]: /guides/gs/accessing-data-gemfire/
-[gs-accessing-data-neo4j]: /guides/gs/accessing-data-neo4j/
-[gs-accessing-data-mongo]: /guides/gs/accessing-data-mongo/
+* [Accessing Relational Data](/guides/gs/relational-data-access/)
+* [Accessing Data with JPA](/guides/gs/accessing-data-jpa/)
+* [Accessing Data with GemFire](/guides/gs/accessing-data-gemfire/)
+* [Accessing Data with Neo4j](/guides/gs/accessing-data-neo4j/)
+* [Accessing Data with MongoDB](/guides/gs/accessing-data-mongo/)
+* [Accessing JPA Data with REST](/guides/gs/accessing-data-rest)
+* [Accessing Neo4j Data with REST](/guides/gs/accessing-neo4j-data-rest)
 
 ### Tutorials
 
