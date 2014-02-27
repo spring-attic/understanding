@@ -9,7 +9,6 @@ There's more to NoSQL than what is presented here. You may want to continue your
 * [Accessing Data with GemFire](/guides/gs/accessing-data-gemfire/)
 * [Accessing Data with Neo4j](/guides/gs/accessing-data-neo4j/)
 * [Accessing Data with MongoDB](/guides/gs/accessing-data-mongo/)
-* [Accessing JPA Data with REST](/guides/gs/accessing-data-rest)
 * [Accessing Neo4j Data with REST](/guides/gs/accessing-neo4j-data-rest)
 
 ### Tutorials
