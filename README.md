@@ -13,5 +13,6 @@
  - [OAuth](./oauth)
  - [REST](./rest)
  - [Tomcat](./tomcat)
+ - [SOAP](./soap)
  - [View Templates](./view-templates)
  - [WAR](./war)
