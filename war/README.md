@@ -9,4 +9,4 @@ WAR files are usually deployed in servlet containers, but can also be deployed t
 WAR files cannot be edited while the application is running. Any changes require rebuilding the file.
 
 [war]: http://en.wikipedia.org/wiki/WAR_file_format_(Sun)
-[u-jsp]: /u/jsp
+[u-jsp]: /understanding/view-templates
