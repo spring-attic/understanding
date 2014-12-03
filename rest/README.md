@@ -62,7 +62,7 @@ Request that a resource be removed; however, the resource does not have to be re
 Delete an address with an ID of 1:
 
 ```
-DELETE /address/1
+DELETE /addresses/1
 ```
 
 
