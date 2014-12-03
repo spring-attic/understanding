@@ -31,7 +31,7 @@ This object has three fields, where "name" is a string, "age" is a number, and "
 ```javascript
 {
     "name": "John",
-    "age":  35
+    "age":  35,
     "member": false
 }
 ```
