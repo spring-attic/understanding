@@ -25,7 +25,8 @@ public class A implements ApplicationContextAware {
 
     private ApplicationContext applicationContext;
 
-    public void setApplicationContext(ApplicationContext applicationContext) {
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         this.applicationContext = applicationContext;
     }
 
@@ -38,6 +39,7 @@ You can also use the [`@Autowired`] annotation to inject a reference directly in
 package hello;
  
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
  
 public class B {
 
