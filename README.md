@@ -2,6 +2,7 @@
 
  - [AMQP](./amqp)
  - [Application Context](./application-context)
+ - [CORS](./cors)
  - [git](./git)
  - [Hadoop](./hadoop)
  - [HATEOAS](./hateoas)
@@ -12,7 +13,7 @@
  - [NoSQL](./nosql)
  - [OAuth](./oauth)
  - [REST](./rest)
- - [Tomcat](./tomcat)
  - [SOAP](./soap)
+ - [Tomcat](./tomcat)
  - [View Templates](./view-templates)
  - [WAR](./war)
