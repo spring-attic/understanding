@@ -1,4 +1,6 @@
-# Concepts and Technologies
+# Understanding Related Technologies
+
+This repository is for quick notes on understanding related technologies.
 
  - [AMQP](./amqp)
  - [Application Context](./application-context)
