@@ -10,6 +10,8 @@ The `ApplicationContext` provides:
  - The ability to resolve messages to support internationalization.
  - Inheritance from a parent context.
 
+ > **NOTE**: This understanding guide provides details about Spring's usage of the application context. But in most situations, developers do NOT need to directly access the application context.
+
 ## Access the application context
 
 There are a few methods for obtaining a reference to the application context. You can implement [`ApplicationContextAware`] as in the following example:
@@ -33,21 +35,29 @@ public class A implements ApplicationContextAware {
 }
 ```
 
-You can also use the [`@Autowired`] annotation to inject a reference directly into your class:
+There are other options like field injection, but that technique is [best avoided](http://olivergierke.de/2013/11/why-field-injection-is-evil/) due to issues that may arise.
+
+Before using the application context to find beans, there are better techniques to use first.
 
 ```java
-package hello;
- 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
- 
-public class B {
+@SpringBootApplication
+public class Application {
 
-    @Autowired private ApplicationContext applicationContext;
+	@Bean
+	RedisMessageListenerContainer container(RedisConnectionFactory connectionFactory,
+			MessageListenerAdapter listenerAdapter) {
 
+		RedisMessageListenerContainer container = new RedisMessageListenerContainer();
+		container.setConnectionFactory(connectionFactory);
+		container.addMessageListener(listenerAdapter, new PatternTopic("chat"));
+
+		return container;
+	}
+	...
 }
 ```
 
+In the code above, there are two arguments to the bean definition: `RedisConnectionFactory` and `MessageListenerAdapter`. The method expresses its needs and Spring's DI container will supply them assuming they are available. While it's possible to fetch these beans directly the an instance of `ApplicationContext`, such a solution leans too heavily on container APIs and is not necessary.
 
 [`ApplicationContext`]: http://static.springsource.org/spring/docs/current/javadoc-api/org/springframework/context/ApplicationContext.html
 [`ApplicationContextAware`]: http://static.springsource.org/spring/docs/current/javadoc-api/org/springframework/context/ApplicationContextAware.html
