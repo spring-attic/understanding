@@ -14,6 +14,7 @@ This repository is for quick notes on understanding related technologies.
  - [JSON](./json)
  - [NoSQL](./nosql)
  - [OAuth](./oauth)
+ - [POJO](./pojo)
  - [REST](./rest)
  - [SOAP](./soap)
  - [Tomcat](./tomcat)
