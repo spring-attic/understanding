@@ -12,7 +12,7 @@ The following view template libraries, among others, are compatible with Spring:
  - [Thymeleaf](http://www.thymeleaf.org/)
  - [Tiles](http://tiles.apache.org/)
  - [Freemarker](http://freemarker.org/)
- - [Velocity](http://velocity.apache.org/tools/devel/view/)
+ - [Velocity](https://velocity.apache.org/)
 
 
 ## Comparing JSP and Thymeleaf
