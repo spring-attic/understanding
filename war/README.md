@@ -4,7 +4,7 @@
 
 WAR files are used to combine [JSPs][u-jsp], servlets, Java class files, XML files, javascript libraries, JAR libraries, static web pages, and any other resources needed to run the application.
 
-WAR files are usually deployed in servlet containers, but can also be deployed to Java EE application servers. When a WAR file is deployed to a container, the container usually unpacks it to access the files and then launches the application. With servlet containers being the most prolific platform for Java web applications, WAR files are not only a Java spec standard, but a 
+WAR files are usually deployed in servlet containers, but can also be deployed to Java EE application servers. When a WAR file is deployed to a container, the container usually unpacks it to access the files and then launches the application.
 
 WAR files cannot be edited while the application is running. Any changes require rebuilding the file.
 
