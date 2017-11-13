@@ -14,6 +14,7 @@ These advantages and the openness of the spec have inspired the creation of mult
 - [RabbitMQ][rabbitmq]
 - [ActiveMQ][activemq]
 - [Qpid][qpid]
+- [Solace][solace]
 
 ## AMQP and JMS terminology
 
@@ -29,4 +30,5 @@ These advantages and the openness of the spec have inspired the creation of mult
 [rabbitmq]: http://rabbitmq.com
 [activemq]: http://activemq.apache.org/
 [qpid]: http://qpid.apache.org/index.html
+[solace]: http://dev.solace.com/tech/amqp/
 
