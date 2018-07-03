@@ -49,7 +49,7 @@ PUT /addresses/1
 
 ### PATCH
 
-Update only the specified fields of an entity at a URI. A PATCH request is idempotent. Idempotency is the main difference between the expectations of PUT versus a POST request.
+Update only the specified fields of an entity at a URI. A PATCH request is neither safe nor idempotent (RFC 5789). That's because a PATCH operation cannot ensure the entire resource has been updated.
 
 ```
 PATCH /addresses/1
