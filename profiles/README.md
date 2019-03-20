@@ -16,4 +16,4 @@ You can activate a profile at runtime by setting `spring.profiles.active` (a com
 
 By default Spring always runs in the "default" profile, but there are no other special profiles defined by Spring. Cloud Foundry runs a Spring application in the "cloud" profile.
 
-[`@Profile`]: http://static.springsource.org/spring/docs/current/javadoc-api/org/springframework/context/annotation/Profile.html
+[`@Profile`]: https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/context/annotation/Profile.html

@@ -16,7 +16,7 @@ A promise can be in one of 3 states:
 
 When a promise is pending, it can transition to the fulfilled or rejected state.  Once a promise is fulfilled or rejected, however, it will never transition to any other state, and its value or failure reason will not change.
 
-Promises have been implemented in many languages, and while promise APIs differ from language to language, JavaScript promises have converged to the [Promises/A+](http://promisesaplus.com) proposed standard.  EcmaScript 6 is slated to provide promises as a first-class language feature, and they will be based on the Promises/A+ proposal.
+Promises have been implemented in many languages, and while promise APIs differ from language to language, JavaScript promises have converged to the [Promises/A+](https://promisesaplus.com) proposed standard.  EcmaScript 6 is slated to provide promises as a first-class language feature, and they will be based on the Promises/A+ proposal.
 
 ## Using Promises
 
