@@ -37,16 +37,16 @@ Because each NoSQL data store has unique aspects in both how its data is stored 
 
 Dozens of NoSQL data stores are available; the following are among the most popular:
 
-- [MongoDB](http://www.mongodb.org/). Open-source document database.
-- [CouchDB](http://couchdb.apache.org/). Database that uses JSON for documents, JavaScript for MapReduce queries, and regular HTTP for an API.
-- [GemFire](http://www.springsource.org/spring-gemfire). Distributed data management platform providing dynamic scalability, high performance, and database-like persistence.
-- [Redis](http://redis.io/). Data structure server wherein keys can contain strings, hashes, lists, sets, and sorted sets.
-- [Cassandra](http://cassandra.apache.org/). Database that provides scalability and high availability without compromising performance.
-- [memcached](http://memcached.org/). Open source high-performance, distributed-memory, and object-caching system.
-- [Hazelcast](http://www.hazelcast.com/). Open source highly scalable data distribution platform.
-- [HBase](http://hbase.apache.org/). Hadoop database, a distributed and scalable big data store.
-- [Mnesia](http://www.erlang.org/doc/man/mnesia.html). Distributed database management system that exhibits soft real-time properties.
-- [Neo4j](http://www.neo4j.org/). Open source high-performance, enterprise-grade graph database.
+- [MongoDB](https://www.mongodb.org/). Open-source document database.
+- [CouchDB](https://couchdb.apache.org/). Database that uses JSON for documents, JavaScript for MapReduce queries, and regular HTTP for an API.
+- [GemFire](https://www.springsource.org/spring-gemfire). Distributed data management platform providing dynamic scalability, high performance, and database-like persistence.
+- [Redis](https://redis.io/). Data structure server wherein keys can contain strings, hashes, lists, sets, and sorted sets.
+- [Cassandra](https://cassandra.apache.org/). Database that provides scalability and high availability without compromising performance.
+- [memcached](https://memcached.org/). Open source high-performance, distributed-memory, and object-caching system.
+- [Hazelcast](https://www.hazelcast.com/). Open source highly scalable data distribution platform.
+- [HBase](https://hbase.apache.org/). Hadoop database, a distributed and scalable big data store.
+- [Mnesia](https://www.erlang.org/doc/man/mnesia.html). Distributed database management system that exhibits soft real-time properties.
+- [Neo4j](https://www.neo4j.org/). Open source high-performance, enterprise-grade graph database.
 
 
 [eventual-consistency]: https://en.wikipedia.org/wiki/Eventual_consistency

@@ -1,6 +1,6 @@
 # Understanding Hadoop
 
-[Apache™ Hadoop®](http://hadoop.apache.org/) is an open-source project that provides reliable, scalable, distributed computing.
+[Apache™ Hadoop®](https://hadoop.apache.org/) is an open-source project that provides reliable, scalable, distributed computing.
 
 The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models. It can scale up from single servers to thousands of machines, each offering local computation and storage. Rather than relying on hardware to deliver high-availability, the library itself detects and handles failures at the application layer. It delivers a highly-available service on top of a cluster of computers, each of which may be prone to failure.
 
@@ -11,11 +11,11 @@ Hadoop supports multiple programming models including:
 
 ### Hive, Pig, and other Hadoop-based systems
 
-[Hive is a data warehouse system](http://hive.apache.org/) that provides the means to query Hadoop file systems with a SQL-like language called HiveQL.
+[Hive is a data warehouse system](https://hive.apache.org/) that provides the means to query Hadoop file systems with a SQL-like language called HiveQL.
 
-[Apache Pig](http://pig.apache.org/) is a platform for analyzing large sets of data using map-reduce programs. The name is based on its query/map-reduce language, Pig Latin.
+[Apache Pig](https://pig.apache.org/) is a platform for analyzing large sets of data using map-reduce programs. The name is based on its query/map-reduce language, Pig Latin.
 
-Many other systems are being built on top of Hadoop. It is being used as a distributed, fault tolerant infrastructure. Examples include [Cassandra NoSQL database](http://cassandra.apache.org/), and [HBase](http://hbase.apache.org/).
+Many other systems are being built on top of Hadoop. It is being used as a distributed, fault tolerant infrastructure. Examples include [Cassandra NoSQL database](https://cassandra.apache.org/), and [HBase](https://hbase.apache.org/).
 
 ## Challenges
 

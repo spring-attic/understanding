@@ -59,6 +59,6 @@ public class Application {
 
 In the code above, there are two arguments to the bean definition: `RedisConnectionFactory` and `MessageListenerAdapter`. The method expresses its needs and Spring's DI container will supply them assuming they are available. While it's possible to fetch these beans directly the an instance of `ApplicationContext`, such a solution leans too heavily on container APIs and is not necessary.
 
-[`ApplicationContext`]: http://static.springsource.org/spring/docs/current/javadoc-api/org/springframework/context/ApplicationContext.html
-[`ApplicationContextAware`]: http://static.springsource.org/spring/docs/current/javadoc-api/org/springframework/context/ApplicationContextAware.html
-[`@Autowired`]: http://static.springsource.org/spring/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Autowired.html
+[`ApplicationContext`]: https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/context/ApplicationContext.html
+[`ApplicationContextAware`]: https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/context/ApplicationContextAware.html
+[`@Autowired`]: https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Autowired.html

@@ -23,12 +23,12 @@ These advantages and the openness of the spec have inspired the creation of mult
 - JMS and AMQP both have brokers responsible for receiving, routing, and ultimately dispensing messages to consumers.
 - AMQP has exchanges, routes, and queues. Messages are first published to exchanges. Routes define on which queue(s) to pipe the message. Consumers subscribing to that queue then receive a copy of the message. If more than one consumer subscribes to the same queue, the messages are dispensed in a round-robin fashion.
 
-[amqp]: http://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol
-[jms]: http://en.wikipedia.org/wiki/Java_Message_Service
-[amqp-spec]: http://www.amqp.org/resources/download
-[pivotal]: http://gopivotal.com
-[rabbitmq]: http://rabbitmq.com
-[activemq]: http://activemq.apache.org/
-[qpid]: http://qpid.apache.org/index.html
-[solace]: http://dev.solace.com/tech/amqp/
+[amqp]: https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol
+[jms]: https://en.wikipedia.org/wiki/Java_Message_Service
+[amqp-spec]: https://www.amqp.org/resources/download
+[pivotal]: https://pivotal.io
+[rabbitmq]: https://rabbitmq.com
+[activemq]: https://activemq.apache.org/
+[qpid]: https://qpid.apache.org/index.html
+[solace]: https://dev.solace.com/tech/amqp/
 

@@ -1,6 +1,6 @@
 # Understanding HATEOAS
 
-HATEOAS (Hypermedia as the Engine of Application State) is a [constraint of the REST application architecture](http://en.wikipedia.org/wiki/HATEOAS).
+HATEOAS (Hypermedia as the Engine of Application State) is a [constraint of the REST application architecture](https://en.wikipedia.org/wiki/HATEOAS).
 
 A hypermedia-driven site provides information to navigate the site's [REST][u-rest] interfaces dynamically by including hypermedia links with the responses. This capability differs from that of SOA-based systems and WSDL-driven interfaces. With SOA, servers and clients usually must access a fixed specification that might be staged somewhere else on the website, on another website, or perhaps distributed by email.
 
@@ -80,6 +80,6 @@ Look at the following catalog, courtesy of the sample application shown in the [
     } ]
 }   
 ```
-Not only are the items and their prices shown, but the URL for each resource is shown, providing clear information on how to access these resources. According to the [Richardson Maturity Model](http://martinfowler.com/articles/richardsonMaturityModel.html), HATEOAS is considered the final level of REST. This means that each link is presumed to implement the standard REST verbs of GET, POST, PUT, and DELETE (or a subset). Thus providing the links as shown above gives the client the information they need to navigate the service.
+Not only are the items and their prices shown, but the URL for each resource is shown, providing clear information on how to access these resources. According to the [Richardson Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html), HATEOAS is considered the final level of REST. This means that each link is presumed to implement the standard REST verbs of GET, POST, PUT, and DELETE (or a subset). Thus providing the links as shown above gives the client the information they need to navigate the service.
 
 [u-rest]: /understanding/rest

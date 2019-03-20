@@ -23,11 +23,11 @@ For example, suppose that client code served from foo.client.com were to send th
 GET /greeting/ HTTP/1.1
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/536.30.1 (KHTML, like Gecko) Version/6.0.5 Safari/536.30.1
 Accept: application/json, text/plain, */*
-Referer: http://foo.client.com/
-Origin: http://foo.client.com
+Referer: https://foo.client.com/
+Origin: https://foo.client.com/
 ```
 
-The `Origin` header tells the server that the client code originated from http://foo.client.com.
+The `Origin` header tells the server that the client code originated from https://foo.client.com/.
 So it checks its same-origin policies and determines that it can serve the request.
 The response might look like this:
 
@@ -38,12 +38,12 @@ Date: Wed, 20 Nov 2013 19:36:00 GMT
 Server: Apache-Coyote/1.1
 Content-Length: 35
 Connection: keep-alive
-Access-Control-Allow-Origin: http://foo.client.com
+Access-Control-Allow-Origin: https://foo.client.com/
 
 [response payload]
 ```
 
-The `Access-Control-Allow-Origin` indicates that "http://foo.client.com" is allowed access, but no other origins will be allowed access.
+The `Access-Control-Allow-Origin` indicates that "https://foo.client.com/" is allowed access, but no other origins will be allowed access.
 
 Optionally, `Access-Control-Allow-Origin` may be set to "*" to indicate that all client origins are allowed. This is considered an unsafe practice, however, except in special cases where an API is completely public and is expected to be consumed by any client.
 
@@ -61,7 +61,7 @@ OPTIONS /resource/12345
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/536.30.1 (KHTML, like Gecko) Version/6.0.5 Safari/536.30.1
 Access-Control-Request-Method: DELETE
 Access-Control-Request-Headers: origin, x-requested-with, accept
-Origin: http://foo.client.com
+Origin: https://foo.client.com/
 ```
 
 The preflight request is essentially asking the server if it would allow the DELETE request, without actually sending the DELETE request.
@@ -73,7 +73,7 @@ Date: Wed, 20 Nov 2013 19:36:00 GMT
 Server: Apache-Coyote/1.1
 Content-Length: 0
 Connection: keep-alive
-Access-Control-Allow-Origin: http://foo.client.com
+Access-Control-Allow-Origin: https://foo.client.com/
 Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE
 Access-Control-Max-Age: 86400
 ```
@@ -83,5 +83,5 @@ The `Access-Control-Max-Age` indicates that this preflight response is good for 
 
 In the meantime, the client will be allowed to send the original DELETE request for the resource.
 
-[same-origin-policy]: http://www.w3.org/Security/wiki/Same_Origin_Policy
+[same-origin-policy]: https://www.w3.org/Security/wiki/Same_Origin_Policy
 [cors]: http://www.w3.org/TR/cors/

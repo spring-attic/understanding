@@ -1,6 +1,6 @@
 # Understanding OAuth
 
-OAuth (Open Authorization), as stated on [oauth.net](http://oauth.net), is "an open protocol to allow secure authorization in a simple and standard method from web, mobile and desktop applications." In other words, OAuth is an authorization protocol that allows users to approve a third-party application to act on their behalf without revealing their login credentials to that third party. 
+OAuth (Open Authorization), as stated on [oauth.net](https://oauth.net), is "an open protocol to allow secure authorization in a simple and standard method from web, mobile and desktop applications." In other words, OAuth is an authorization protocol that allows users to approve a third-party application to act on their behalf without revealing their login credentials to that third party. 
 
 In contrast, OAuth is not an authentication protocol for signing in with a username and password. Authentication is handled independently from the OAuth process. 
 
@@ -32,7 +32,7 @@ The next version of OAuth is not backwards compatible with previous versions. OA
 
 #### Authorization grants
 
-The [RFC 6749](http://tools.ietf.org/html/rfc6749#section-1.3) specification defines four grant types. These grant types provide developers with alternative methods for obtaining the user's permission to access the resources on a provider. 
+The [RFC 6749](https://tools.ietf.org/html/rfc6749#section-1.3) specification defines four grant types. These grant types provide developers with alternative methods for obtaining the user's permission to access the resources on a provider. 
 
  - Authorization Code Grant. The authorization code is obtained by using an authorization server as an intermediary between the client and resource owner.
  - Implicit grant. This grant is a simplified authorization code flow optimized

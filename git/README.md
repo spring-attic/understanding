@@ -2,13 +2,13 @@
 
 [Git][git] is a free and open source distributed version control system (DVCS). It is designed to handle projects of any size and scope with speed and efficiency.
 
-Git was invented by [Linux](http://www.linux.org/) creator [Linus Torvalds](http://en.wikipedia.org/wiki/Linus_Torvalds) to support the huge, disparate group of Linux developers. But Git's popularity is more closely tied to http://github.com. Git has been in existence for years, but did not gain wide acceptance beyond the Linux community until the more recent surge in GitHub popularity. GitHub allows you to host open source projects at no cost. It also provides simple hooks and a friendly user experience that make Git easier to use.
+Git was invented by [Linux](https://www.linux.org/) creator [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) to support the huge, disparate group of Linux developers. But Git's popularity is more closely tied to https://github.com. Git has been in existence for years, but did not gain wide acceptance beyond the Linux community until the more recent surge in GitHub popularity. GitHub allows you to host open source projects at no cost. It also provides simple hooks and a friendly user experience that make Git easier to use.
 
 Other projects such as [Mac Homebrew](https://github.com/mxcl/homebrew/wiki/Formula-Cookbook#creating-the-diff) have invested deeply in Git. Homebrew lets you install open source packages on a Mac. The tools to build and manage these formulas leverage Git for diff tools, crafting patches, management of resources, and submitting new and updated packages through [pull requests](https://help.github.com/articles/using-pull-requests).
 
 ### Git vs. other DVCSes
 
-The two other most popular DVCS choices are [Mercurial](http://mercurial.selenic.com/) and [Bazaar](http://bazaar.canonical.com/en/). Mercurial has the command line tool `hg` (named after the chemical symbol for mercury), and Bazaar's command line tool is `bzr`.
+The two other most popular DVCS choices are [Mercurial](https://mercurial.selenic.com/) and [Bazaar](https://bazaar.canonical.com/en/). Mercurial has the command line tool `hg` (named after the chemical symbol for mercury), and Bazaar's command line tool is `bzr`.
 
 Mercurial is associated with many open source projects. Canonical, the company behind Ubuntu Linux, uses Bazaar. It is not unusual for a developer to need familiarity with Git, Mercurial, and Bazaar.
 
@@ -37,5 +37,5 @@ To illustrate the difference between DVCS and non-DVCS SCM systems, consider how
 
 The built-in advantage of tools like Git is that every person with a copy has _everything_ needed to reconstitute a project. If a central server crashes and all data is lost, any remote copy can be designated the official copy, because it will have enough information to proceed. The only discrepancy arises if developers don't have the latest commits.
 
-[git]: http://gitscm.com/ 
+[git]: https://git-scm.com 
 

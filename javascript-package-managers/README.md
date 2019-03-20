@@ -1,8 +1,8 @@
 # Understanding JavaScript Package Managers
 
-There are several JavaScript package managers: [npm](http://npmjs.org/),
-[bower](http://bower.io/), [volo](http://volojs.org/),
-[ringojs](http://packages.ringojs.org/), [component](http://component.io/).
+There are several JavaScript package managers: [npm](https://npmjs.org/),
+[bower](https://bower.io/), [volo](https://volojs.org/),
+[ringojs](http://packages.ringojs.org/), [component](https://component.io/).
 Currently, npm and bower have the most registered packages and enjoy the
 broadest third-party support.
 

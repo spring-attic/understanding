@@ -8,20 +8,20 @@ Within an application, the view layer may use one or more different technologies
 
 The following view template libraries, among others, are compatible with Spring:
 
- - [JSP/JSTL](http://www.oracle.com/technetwork/java/javaee/jsp/index.html)
- - [Thymeleaf](http://www.thymeleaf.org/)
- - [Tiles](http://tiles.apache.org/)
- - [Freemarker](http://freemarker.org/)
+ - [JSP/JSTL](https://www.oracle.com/technetwork/java/javaee/jsp/index.html)
+ - [Thymeleaf](https://www.thymeleaf.org/)
+ - [Tiles](https://tiles.apache.org/)
+ - [Freemarker](https://freemarker.apache.org/)
  - [Velocity](https://velocity.apache.org/)
 
 
 ## Comparing JSP and Thymeleaf
 
-The following examples illustrate how to render the same content with JSP and Thymeleaf templates. For more detail, see this [Spring blog post](http://blog.springsource.org/2013/03/26/bringing-new-life-to-spring-travel-with-thymeleaf/).
+The following examples illustrate how to render the same content with JSP and Thymeleaf templates. For more detail, see this [Spring blog post](https://blog.springsource.org/2013/03/26/bringing-new-life-to-spring-travel-with-thymeleaf/).
 
 ### JSP
 
-Note the [JSTL](http://en.wikipedia.org/wiki/JavaServer_Pages_Standard_Tag_Library) (JavaServer Pages Standard Tag Library) expressions in this example.
+Note the [JSTL](https://en.wikipedia.org/wiki/JavaServer_Pages_Standard_Tag_Library) (JavaServer Pages Standard Tag Library) expressions in this example.
 
 ```html
 <c:url var="hotelsUrl" value="/hotels"/>
