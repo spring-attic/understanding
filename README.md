@@ -1,3 +1,5 @@
+# This repository is no longer actively maintained by VMware, Inc.
+
 # Understanding Related Technologies
 
 This repository is for quick notes on understanding related technologies.
